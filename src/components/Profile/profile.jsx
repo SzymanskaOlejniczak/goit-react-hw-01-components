@@ -18,13 +18,7 @@ export function Profile({
     avatar,
     stats: { followers, views, likes },
   }){
-    console.log({
-        username,
-        tag,
-        location,
-        avatar,
-        stats: { followers, views, likes },
-      })
+   
     return (
         <ProfileDiv>
             <Description>
