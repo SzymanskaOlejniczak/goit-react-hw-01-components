@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const FriendListUl = styled.ul`
   display: flex;
-  width: 400px;
+  width: 320px;
   flex-direction: column;
   margin: 0 auto;
   list-style-type: none;
