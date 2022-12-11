@@ -15,12 +15,12 @@ export const Description = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  width: 350px;
+  width: 300px;
   border: 1px solid #0f0f4f;
 `;
 export const PhotoAvatar = styled.img`
   display: block;
-  height: 220px;
+  height: 200px;
   width: 200px;
   margin-top: 20px;
   border-radius: 50%;
