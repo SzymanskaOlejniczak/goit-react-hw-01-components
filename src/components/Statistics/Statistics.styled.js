@@ -10,7 +10,7 @@ export const Title = styled.h2`
   background-color: white;
 `;
 export const SectionStat = styled.section`
-  width: 400px;
+  width: 320px;
   padding:30px;
   margin: 0 auto;
 `;
@@ -29,6 +29,6 @@ export const Item = styled.li`
   text-align: center;
   font-size: 16px;
   color: #f3f3f3;
-  width: 80px;
+  width: 66px;
   border: 1px solid green;
 `;
