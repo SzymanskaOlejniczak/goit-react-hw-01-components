@@ -11,9 +11,8 @@ export const Title = styled.h2`
 `;
 export const SectionStat = styled.section`
   width: 400px;
-  margin: 20px;
-  margin-left: 758px;
-  border: 2px solid green;
+  padding:30px;
+  margin: 0 auto;
 `;
 export const StatList = styled.ul`
   display: flex;
