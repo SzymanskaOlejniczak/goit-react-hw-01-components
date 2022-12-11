@@ -10,8 +10,9 @@ export const Title = styled.h2`
   background-color: white;
 `;
 export const SectionStat = styled.section`
-  width: 320px;
-  padding:30px;
+  width: 300px;
+  padding-top:30px;
+  padding-bottom:30px;
   margin: 0 auto;
 `;
 export const StatList = styled.ul`
@@ -29,6 +30,6 @@ export const Item = styled.li`
   text-align: center;
   font-size: 16px;
   color: #f3f3f3;
-  width: 66px;
+  width: 64px;
   border: 1px solid green;
 `;
