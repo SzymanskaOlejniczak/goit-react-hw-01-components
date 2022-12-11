@@ -5,7 +5,7 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-right: 0 auto;
+  margin-right: 10px;
   background-color: ${props => (props.statusType ? 'green' : 'red')};
 `;
 export const Name = styled.p`
