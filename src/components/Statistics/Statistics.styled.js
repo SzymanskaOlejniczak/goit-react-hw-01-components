@@ -10,15 +10,17 @@ export const Title = styled.h2`
   background-color: white;
 `;
 export const SectionStat = styled.section`
-  width: 250px;
-  margin: 0 auto;
-  padding: 50px 20px;
+  width: 400px;
+  margin: 20px;
+  margin-left: 758px;
+  border: 2px solid green;
 `;
 export const StatList = styled.ul`
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
+  border: 1px solid green;
 `;
 export const Item = styled.li`
   display: flex;
@@ -28,5 +30,6 @@ export const Item = styled.li`
   text-align: center;
   font-size: 16px;
   color: #f3f3f3;
-  width: 50px;
+  width: 80px;
+  border: 1px solid green;
 `;
