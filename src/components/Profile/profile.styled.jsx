@@ -4,7 +4,7 @@ export const ProfileDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
+  background-color: rgb(164, 205, 152);
   padding-top: 60px;
   padding-bottom: 60px;
 `;
@@ -63,9 +63,10 @@ export const ItemsStats = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  :nth-last-of-type(1n) {
-    border-right: 1px solid #0f0f4f;
-  }
+  :nth-child(1n+2)
+   {
+    border-left: 1px solid #0f0f4f;
+  };
   padding: 5px;
 `;
 export const SpanLabel = styled.span`
@@ -74,11 +75,11 @@ export const SpanLabel = styled.span`
   line-height: 1.62;
   font-weight: 16px;
   text-align: center;
-  color: #484137;
+  color: #494539;
 `;
 
 export const SpanQuantity = styled.span`
-  color: #0f0f4f;
+  color: rgb(27, 11, 44);
   text-align: center;
   font-size: 16px;
   line-height: 1.58;
