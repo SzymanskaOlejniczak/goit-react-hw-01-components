@@ -13,5 +13,5 @@ export const Container = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   list-style-type: none;
-  background-color: #c1cac9;
+  background-color: rgb(239, 230, 201);
 `;
