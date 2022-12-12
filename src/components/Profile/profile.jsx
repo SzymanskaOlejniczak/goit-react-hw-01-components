@@ -1,16 +1,6 @@
 import PropTypes from 'prop-types';
-import {
-  ProfileDiv,
-  Description,
-  NameUser,
-  TagUser,
-  LocationUser,
-  Stats,
-  ItemsStats,
-  SpanLabel,
-  SpanQuantity,
-  PhotoAvatar,
-} from './profile.styled';
+import styles from './profile.module.css';
+
 export function Profile({
     username,
     tag,
@@ -20,28 +10,42 @@ export function Profile({
   }){
    
     return (
-        <ProfileDiv>
-            <Description>
-                <PhotoAvatar src={avatar} alt={username}/>
-                <NameUser>{username}</NameUser>
-                <TagUser>@{tag}</TagUser>
-                <LocationUser>{location}</LocationUser>
-                <Stats>
-                    <ItemsStats>
-                        <SpanLabel>Followers</SpanLabel>
-                        <SpanQuantity>{followers}</SpanQuantity>
-                    </ItemsStats>
-                    <ItemsStats>
-                        <SpanLabel>Views</SpanLabel>
-                        <SpanQuantity>{views}</SpanQuantity>
-                    </ItemsStats>
-                    <ItemsStats>
-                        <SpanLabel>Likes</SpanLabel>
-                        <SpanQuantity>{likes}</SpanQuantity>
-                    </ItemsStats>
-                </Stats>
-            </Description>
-        </ProfileDiv>
+        <div className={styles.profile}>
+          <div className={styles.description}>
+            <img
+              src={avatar}
+              alt={username}
+              className={styles.photoAvatar}
+            />
+            <p className={styles.nameUser}>{username}</p>
+            <p className={styles.tagUser}>@{tag}</p>
+            <p className={styles.locationUser}>{location}</p>
+            <ul className={styles.stats}>
+        <li className={styles.itemsStats}>
+          <span className={styles.spanLabel}>Followers</span>
+          <span className={styles.spanQuantity}>{followers}</span>
+        </li>
+        <li className={styles.itemsStats}>
+          <span className={styles.spanLabel}>Views</span>
+          <span className={styles.spanQuantity}>{views}</span>
+        </li>
+        <li className={styles.itemsStats}>
+          <span className={styles.spanLabel}>Likes</span>
+          <span className={styles.spanQuantity}>{likes}</span>
+        </li>
+      </ul>
+          </div>
+          
+
+        </div>
+          
+                
+                
+               
+               
+               
+                    
+           
     );
   }
 
