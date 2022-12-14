@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
+
 const TransactionHistory = ({ items }) => {
   return (
     <table className={styles.transactionHistoryTable}>
@@ -25,7 +26,7 @@ const TransactionHistory = ({ items }) => {
   );
 };
 
-TransactionHistory.prototype = {
+TransactionHistory.propTypes = {
   type: PropTypes.string,
   amount: PropTypes.number,
   currency: PropTypes.string,
