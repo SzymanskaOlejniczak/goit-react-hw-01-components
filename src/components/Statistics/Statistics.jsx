@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
-export function Statistics ({title ='Upload stats', stats}){
-    function randomHexColor() {
-        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-      }
+const randomHexColor=()=> (
+`#${Math.floor(Math.random() * 16777215).toString(16)}`
+)
+const Statistics = ({title ='Upload stats', stats}) => {
+   
     return (
         <section className={styles.sectionStat}>
             {title && <h2 className={styles.title}>{title}</h2>}
             <ul className={styles.statList}>
-        {stats.map(({ id, label, percentage }) => (
+              {stats.map(({ id, label, percentage }) => (
                 <li
                 className={styles.item}
                 key={id}
                 style={{ backgroundColor: randomHexColor() }}
                 >
-                <span className="label">{label}</span>
-            <   span className="percentage">{percentage}%</span>
+                  <span className="label">{label}</span>
+                  <span className="percentage">{percentage}%</span>
                 </li>
-        ))}
+              ))}
             </ul>
         </section>
     );
@@ -31,3 +32,4 @@ Statistics.propTypes = {
       })
     ).isRequired,
   };
+  export default Statistics
