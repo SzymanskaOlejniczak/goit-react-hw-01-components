@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
+
 const randomHexColor=()=> (
 `#${Math.floor(Math.random() * 16777215).toString(16)}`
 )
