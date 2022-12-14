@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-import styles from './profile.module.css';
-
-export function Profile({
+import styles from './Profile.module.css';
+const Profile = ({
     username,
     tag,
     location,
     avatar,
     stats: { followers, views, likes },
-  }){
+  }) => {
    
     return (
         <div className={styles.profile}>
@@ -21,31 +20,21 @@ export function Profile({
             <p className={styles.tagUser}>@{tag}</p>
             <p className={styles.locationUser}>{location}</p>
             <ul className={styles.stats}>
-        <li className={styles.itemsStats}>
-          <span className={styles.spanLabel}>Followers</span>
-          <span className={styles.spanQuantity}>{followers}</span>
-        </li>
-        <li className={styles.itemsStats}>
-          <span className={styles.spanLabel}>Views</span>
-          <span className={styles.spanQuantity}>{views}</span>
-        </li>
-        <li className={styles.itemsStats}>
-          <span className={styles.spanLabel}>Likes</span>
-          <span className={styles.spanQuantity}>{likes}</span>
-        </li>
-      </ul>
+              <li className={styles.itemsStats}>
+                <span className={styles.spanLabel}>Followers</span>
+                <span className={styles.spanQuantity}>{followers}</span>
+              </li>
+              <li className={styles.itemsStats}>
+                <span className={styles.spanLabel}>Views</span>
+                <span className={styles.spanQuantity}>{views}</span>
+              </li>
+              <li className={styles.itemsStats}>
+                <span className={styles.spanLabel}>Likes</span>
+                <span className={styles.spanQuantity}>{likes}</span>
+              </li>
+            </ul>
           </div>
-          
-
-        </div>
-          
-                
-                
-               
-               
-               
-                    
-           
+        </div>     
     );
   }
 
@@ -60,3 +49,4 @@ export function Profile({
       likes: PropTypes.number.isRequired,
     }).isRequired,
   };
+  export default Profile
